@@ -28,15 +28,15 @@ library(GGally) # contains ggpairs for the corolellogram
 
 
 ### Set up further paths ---------------------------------------------
-project.path <- file.path(normalizePath("~"),
-                          "Dropbox",
-                          "Projects",
-                          "God insures",
-                          "Journal submissions",
-                          "QJE acceptance",
-                          "Data and code")
-setwd(project.path)
-
+# project.path <- file.path(normalizePath("~"),
+#                           "Dropbox",
+#                           "Projects",
+#                           "God insures",
+#                           "Journal submissions",
+#                           "QJE acceptance",
+#                           "Data and code")
+# setwd(project.path)
+project.path <- getwd()
 data.path <- file.path(project.path, "Data")
 output.path <- file.path(project.path, "Output")
 figures.folder <- file.path(output.path, "Figures")

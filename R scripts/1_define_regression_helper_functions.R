@@ -38,6 +38,8 @@ run.ols <- function(df.in,
                       dep.var,
                       treatments,
                       controls,
+                      censor.left = NULL,
+                      censor.right = NULL,
                       vars.exog = NULL,
                       vars.endog = NULL){
     ## Use lm function to run the regression

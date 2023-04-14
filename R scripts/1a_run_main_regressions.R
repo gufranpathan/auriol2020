@@ -40,6 +40,12 @@ tab3.models.w2 <- run.reg.columns(
     specs.df = tab3.specifications,
     tab.name = "insurance_vs_info_wave2")
 
+tab3.models.pooled.ols <- run.reg.columns(
+  dt.in = tab3.data,
+  specs.df = tab3.specifications,
+  reg.function.in = run.ols
+  )
+
 
 ## Table 4 in the paper ----------------------------------------------
 ## compare 'insurance info' to 'no insurance' for weeks with no revival
